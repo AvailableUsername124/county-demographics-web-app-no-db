@@ -19,7 +19,7 @@ def render_fact():
     county = county_most_under_18(state)
     county1 = white(state)
     fact = "In " + state + ", the county with the highest percentage of under 18 year olds is " + county + "."
-    fact1 = "in" + state + ", the country with the lowest percentage of white people is " + county1 + "."
+    fact1 = "in" + state + ", the country with the highest percentage of white people is " + county1 + "."
     return render_template('home.html', state_options=states, funFact=fact, funFact1 = fact1)
     
 def get_state_options():
